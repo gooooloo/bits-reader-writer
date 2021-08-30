@@ -1,6 +1,6 @@
 # bits-reader-writer
 
-A lightweight util to streaming read/write bits from given `char` array.
+A lightweight util to streaming read/write bits from/to given `byte` array.
 
 ## usage
 Include `bits_reader_writer.h` in your source code, then use like this:
