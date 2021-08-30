@@ -25,13 +25,11 @@ Include `bits_reader_writer.h` in your source code, then use like this:
     gooooloo::BitsWriter bw(v, v+2);
 
     int nbits_written = bw.write_bits(gooooloo::BitsV(0b1, 1));
-    if (nbits_written != 1)
-        do_your_error_handling();
+    if (nbits_written != 1) do_your_error_handling();
     // now v[0] is expected to be 0b10000000
 
     nbits_written = bw.write_bits(gooooloo::BitsV(0b1, 2));
-    if (nbits_written != 2)
-        do_your_error_handling();
+    if (nbits_written != 2) do_your_error_handling();
     // now v[0] is expected to be 0b10100000
 ```
 
