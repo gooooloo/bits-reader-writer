@@ -22,7 +22,7 @@
 * SOFTWARE.
 */
 
-#include "bits_reader_writer.h"
+#include "../bits_reader_writer.h"
 #include "gooooloo_test.h"
 
 #define GOOOOLOO_ASSERT_READ_RESULT(x, y, z)  \
