@@ -34,13 +34,13 @@ struct BitsV {
 };
 
 class BitsReader {
-    unsigned char *pnext;
-    unsigned char *pend;
+    const unsigned char *pnext;
+    const unsigned char *pend;
     unsigned char char_cur;
     unsigned char nbits_cur;
 
 public:
-    BitsReader(unsigned char *_pstart, unsigned char *_pend) {
+    BitsReader(const unsigned char *_pstart, const unsigned char *_pend) {
         pnext = _pstart;
         pend = _pend;
         char_cur = 0;
